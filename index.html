@@ -5,31 +5,8 @@
 <html lang="en">
 
 <head>
-    <!-- Basic Page Needs  -->
-    <style>
-        @font-face {
-            font-family: "CustomFont1";
-            src: url("fonts/默陌追风手写体.ttf") format("truetype");
-        }
     
-        @font-face {
-            font-family: "CustomFont2";
-            src: url("fonts/默陌追风手写体.ttf") format("truetype");
-        }
-    
-        @font-face {
-            font-family: "CustomFont3";
-            src: url("fonts/默陌追风手写体.ttf") format("truetype");
-        }
-    
-        /* 添加其他字体文件的 @font-face 规则 */
-    
-        .hero-caption h3,
-        .hero-caption h1,
-        .hero-caption p {
-            font-family: "CustomFont1", "CustomFont2", "CustomFont3", sans-serif;
-        }
-    </style>
+</style>
     <meta charset="utf-8">
     <title>成章实验中学</title>
     <meta name="description" content="">
@@ -145,9 +122,9 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">校园风采</a>
                             <ul class="dropdown-menu">
-                                <li><a href="2.h  tml">优秀教师（建设中）</a></li>
-                                <li><a href="6.html">学校领导（建设中）</a></li>
-                                <li><a href="7.html">学校风景（建设中）</a></li>
+                                <li><a href="2.h  tm">优秀教师（建设中）</a></li>
+                                <li><a href="6.htm">学校领导（建设中）</a></li>
+                                <li><a href="7.htm">学校风景（建设中）</a></li>
                                 <li><a href="http://hyscz.com/list/?2_1.html">学校资讯[官网]</a></li>
                             </ul>
                         </li>
@@ -173,7 +150,7 @@
                                 <li><a href="https://forms.office.com/r/P1GgT5tajC"> 学校建设建议</a></li>
                             </ul>
                         </li>
-                        <li><a href="about-us.html">关于我们</a></li>
+                        <li><a href="about-us.html"></a></li>
                     </ul>
                     <div class="nav navbar-nav navbar-right hidden-xs hidden-sm">
                         <form action="https://kdocs.cn/l/cnzyfWXU4rAC" method="POST">
@@ -204,11 +181,92 @@
         height: 100%;
     }
 </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网站通知</title>
+    <style>
+        /* 弹窗背景 */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        /* 弹窗内容样式 */
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+            max-width: 400px;
+        }
+        /* 按钮样式 */
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+        }
+        .confirm-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .cancel-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
 
+<div id="myModal" class="overlay">
+    <div class="modal-content">
+        <h2>欢迎你来到</h2>
+        <h2>成章实验中学-你好成章</h2>
+        <h2>网站正在更新.....</h2>
+        <div>
+            <button class="btn confirm-btn" id="confirmBtn">进入卡片页</button>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    var countdownTime = 0; // 倒计时时间，单位秒
+
+    document.getElementById('confirmBtn').onclick = function() {
+        var countdownInterval = setInterval(function() {
+            if (countdownTime > 0) {
+                console.log(countdownTime + '秒后自动跳转...');
+                countdownTime--;
+            } else {
+                clearInterval(countdownInterval);
+                window.location.href = 'https://link3.cc/czsyzx'; // 倒计时结束后跳转的URL
+            }
+        }, 1000);
+    };
+
+    document.getElementById('cancelBtn').onclick = function() {
+        document.getElementById('myModal').style.display = 'none';
+    };
+</script>
+
+</body>
+</html>
 <div class="hero-area" id="home">
     <div id="hero-slider-screen" class="owl-carousel owl-theme hero-slider-inner">
         <div class="item">
-            <img src="https://download-cdn.123pan.cn/123-112/cc9d252e/1815767514-0/cc9d252e36b9144188ea66c402d06070/c-m27?v=5&t=1707128048&s=170712804864f2130cc2ed4556c43d2a8f7fc51b8a&r=W3BRX6&bzc=1&bzs=0&filename=99D3142A7146E59D3E2D6CADBA9491C4.jpg&cache_type=1" alt="成章学生网">
+            <img src="img/99D3142A7146E59D3E2D6CADBA9491C4.jpg" alt="成章学生网">
             <div class="hero-caption">
                 <div class="hero-caption-inner">
                     <h3>欢迎来到</h3>
@@ -219,7 +277,7 @@
             </div>
         </div>
         <div class="item">
-            <img src="https://download-cdn.123pan.cn/123-197/7ff0f370/1815767514-0/7ff0f370d7e71cc594481dfa9185d0c5/c-m27?v=5&t=1707128048&s=17071280486e03c841c5dd3210c1aed71378606faf&r=78FZMP&bzc=1&bzs=0&filename=76ab2c98bf4749d6b4bbff86a3f761a9.jpg&cache_type=1" alt="元旦文艺晚会">
+            <img src="img/76ab2c98bf4749d6b4bbff86a3f761a9.jpg" alt="元旦文艺晚会">
             <div class="hero-caption">
                 <div class="hero-caption-inner">
                     <h3>2024年衡阳市成章实验中学元旦文艺晚会</h3>
@@ -229,6 +287,7 @@
                 </div>
             </div>
         </div>
+        
                         
     <!-- End Hero Section -->
     <!-- Service Section -->
@@ -275,34 +334,6 @@
     <!-- Call To Action Section 2 -->
     <!-- End Blog Section -->
     <!-- Clients Section -->
-    <div class="client-area inner-padding foo" data-sr='enter'>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-15">
-                    <div id="clients-slider" class="owl-carousel owl-theme clients-carousel">
-                        <div class="item">
-                            <img src="img/client-logo-1.png" alt="Responsive Image">
-                        </div>
-                        <div class="item">
-                            <img src="img/client-logo-2.png" alt="Responsive Image">
-                        </div>
-                        <div class="item">
-                            <img src="img/client-logo-3.png" alt="Responsive Image">
-                        </div>
-                        <div class="item">
-                            <img src="img/client-logo-4.png" alt="Responsive Image">
-                        </div>
-                        <div class="item">
-                            <img src="img/client-logo-5.png" alt="Responsive Image ">
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Clients Section -->
-    <!-- Footer Section -->
     
                           
             </div>
@@ -337,5 +368,6 @@
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/theme.js"></script>
 </body>
+
 
 </html>
